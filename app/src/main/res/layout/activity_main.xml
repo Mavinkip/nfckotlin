@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Plain Text"
+        android:textSize="36sp"
+        android:textColor="@color/black"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="20dp"
+        android:padding="16dp">
+
+        <EditText
+            android:id="@+id/edit_message"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:hint="Write something"
+            android:padding="8dp"
+            android:inputType="text"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/activate_bT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Activate Tag"
+            android:textColor="@android:color/black"
+            android:layout_marginStart="8dp"
+            android:padding="8dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/nfc_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp"
+        android:text="NFC Content will appear here" />
+</LinearLayout>
